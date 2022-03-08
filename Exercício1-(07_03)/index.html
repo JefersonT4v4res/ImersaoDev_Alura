@@ -9,14 +9,12 @@
     
   </head>
   <body>
-
-    <div class="menu_nav">
+    <div class="menu_nav">  
         <a href="https://www.linkedin.com/in/jeferson-74vares/" target="_blank">
             <img src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/main/_Jeff%20.png"
             alt="Jeferson logo marca"
             class="jeff_logo" />
         </a>
-
         <a href="https://alura.com.br/" target="_blank">
             <img
               src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
@@ -24,62 +22,68 @@
               class="alura-logo"
             />
         </a>
+
+        <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+        class="page-logo"
+        alt=""
+    />
     </div>
 
-    <div class="container">
+    <div class="container_page">
         <!-- Sidebar -->
         <aside class="container__sidebar">
-           <div class="grid-layout" id="btn_Home">
-                <a href="#home" target="_self" rel="next" class="link_click">
-                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/house.svg" alt="icon hoome"> 
-                    <span class="name_button">Home</span>
+            <ul class="opcoes_sidebar">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <img src="" class="nav-icon" alt="">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item_boletim">
+                    <a href="#boletins" class="nav-link_boletim">
+                        <img src="" class="nav-icon" alt="">
+                        Boletim
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#configuracoes" class="nav-link">
+                        <img src="" class="nav-icon" alt="">
+                        Configurações
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link">
+                        <img src="" class="nav-icon" alt="">
+                        Sobre
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown" onclick="ativaDrop()">
+                <a class="drop-perfil-user" id="dropdownUser">
+                    <img src="" alt="" width="32" height="32" class="drop-user-img">
+                    <strong>Jeferson</strong>
                 </a>
-           </div>
-           
-           <div class="grid-layout" id="btn_Boletim">
-                <a href="#boletim" target="_self" rel="next" class="link_click">
-                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/files_boletim.svg" alt="icon boletim">
-                    <span class="name_button">Boletim</span>
-                </a>
-           </div>
-           
-           <div class="grid-layout" id="btn_help">
-                <a href="#ajuda" target="_self" rel="next" class="link_click" >
-                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/help.svg" alt="icon help">
-                    <span class="name_button">Ajuda</span>
-                </a>
-           </div>
-           
-           <div class="grid-layout" id="btn_setting">
-                <a href="#config" target="_self" rel="next" class="link_click" >
-                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/settins.svg" alt="icon settings">
-                    <span class="name_button">Configurações</span>
-                </a>
-           </div> 
-           
-           <div class="grid-layout" id="btn_singOut">
-                <a href="#sair" target="_self" rel="next" class="link_click" >
-                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/singout.svg" alt="icon singout">
-                    <span class="name_button">Sair</span>
-                </a>
-           </div> 
-           
+                <ul id="dropdown-menu" class="dropdown_menu-user" >
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+            </div>
         </aside>
     
         <!-- Main -->
         <main class="container__main">
-            
             <div class="container_alura">
-            <h1 class="page-title">Calculadora de média</h1>
-            <p class="page-subtitle">
-                Descubra qual a sua média de nota de todas as provas!
-            </p>
-            <img
-                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
-                class="page-logo"
-                alt=""
-            />
-    
+                <h1 class="page-title">Boletim online</h1>
+                <p class="page-subtitle">
+                   Atualize as notas clicando nas células e informando um novo valor. A média e o status do
+                   aluno será atualizada em sequência. 
+                </p>
+            </div>
+            
+                <img class="joaoFrangoImg" src="https://github.com/JefersonT4v4res/Projetos/blob/main/joaoFrango.jpg?raw=true" alt="Imagem do aluno João Frango">
                 <table class="tabela_boletim">
                     <tr>
                         <th id="titulo" colspan="7">Boletim escolar</th>
@@ -156,10 +160,9 @@
                         <td class="linha_materias" id="legenda_status" colspan="6">AP (APROVADO) // RE (REPROVADO) </td>
                     </tr>
                 </table>
+        </main>
+    </div>    
 
-                <img class="joaoFrangoImg" src="https://github.com/JefersonT4v4res/Projetos/blob/main/joaoFrango.jpg?raw=true" alt="Imagem do aluno João Frango">
-            </main>
-</div>
 
 <script type="text/javascript" src="./script.js"></script>  
   </body>

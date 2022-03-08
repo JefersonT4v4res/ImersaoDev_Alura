@@ -1,3 +1,14 @@
+function ativaDrop() {
+   let drop = document.getElementById("dropdown-menu");
+   if(drop.style.display == "none") {
+       drop.style.display = "block";
+   } else {
+       drop.style.display = "none";
+
+   }
+}
+
+
 //Vamos do jeito lento mesmo
     var nota1 = parseFloat(window.document.getElementById("mat_nota1").innerHTML);
     var nota2 = parseFloat(window.document.getElementById("mat_nota2").innerHTML);

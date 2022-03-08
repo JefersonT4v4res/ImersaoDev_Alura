@@ -1,23 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     font-family: 'Roboto Mono',monospace;
-    height: 100vh;
-    background-color: #d86868;
   }
 
-.menu_nav { background: #161616; }
+.menu_nav {
+    background: #161616ee;
+    filter: drop-shadow(25em 6px 7px #191b1d);
+    height: 5em; 
+}
 
-.menu_nav{ height: 70px; } 
 
 .jeff_logo {
     position: absolute;
-    top: 5px;
-    left: 10px;
-    width: 370px;
+    top: 0.6em;
+    left: 1em;
+    width: 360px;
 }
 
-.container { display: flex; }
+.page-logo { 
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    display: flex;
+}
 
 .alura-logo {
     width: 40px;
@@ -25,16 +37,169 @@ body {
     top: 10px;
     right: 10px;
 }
+/*Aqui começa o conteúdo da página*/
+.container_page { 
+    width: 100%;
+    height: 96%;
+    display: flex;
+    background-color: #2378e7;  
+}
 
+/*Menu lateral*/
+.container__sidebar {
+    width: 26%;
+    height: 90vh;
+    padding: 5px;
+    background: #eef2f3e7;
+    border-right: 1px #161616 solid;
+    box-shadow: 5px 0 3em 0.5em #161616;
+    
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+.opcoes_sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 20em;
+}
+
+.nav-item:hover {
+    background-color: #0d6efd;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.nav-item:focus {
+    background-color: #0d6efd;
+    border-radius: 0.3rem;
+}
+
+.nav-link_boletim {
+    margin: 0;
+    padding: 13px;
+    display: block;
+}
+
+.nav-item_boletim {
+    padding: 0;
+}
+
+.nav-item_boletim, .nav-link_boletim {
+    background-color: #0d6efd;
+    border-radius: 0.3rem;
+    color: #000;
+    margin: 5px;
+    font-size: 1.1em;
+    cursor: default;
+}
+
+.nav-item, .nav-link{
+    color: #000;
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.nav-item {
+    padding: 0;
+}
+.nav-link {
+    margin: 0;
+    padding: 15px;
+    display: block;
+}
+
+.dropdown {
+    margin-left: 0.5em;
+    margin-top: 1em;
+    display: flex;
+    width: 9em;
+    height: 1em;
+    cursor: pointer;
+}
+
+.drop-perfil-user {
+    user-select: none; 
+    position: absolute;
+    display: flex;
+    align-items: center; 
+}
+
+.drop-user-img {
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.dropdown::after {
+    position: absolute;
+    display: inline-block;
+    margin: 0.9em 0 0 7.5em;
+    content: "";
+    border-top: 0.4em solid;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0 solid;
+    border-left: 0.4em solid transparent;
+}
+
+#dropdown-menu {
+    position: relative;
+    display: block;
+    bottom: 7.5em;
+    left: 2.4em;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    width: 6em;
+    height: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #343a40;
+    border-radius: 0.3em;
+}
+
+#dropdown-menu li {
+    width: auto;
+    padding: 0.1rem;
+    text-align: center;
+    margin: 0.2em;
+    font-size: 1.1rem;
+}
+
+.dropdown-divider {
+    width: 3.5em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dropdown-menu li a {
+    padding:0.2em 0.3em;
+    display:block;
+    color: #fff;
+}
+
+#dropdown-menu li a:hover{
+    background: #7d7f80ad;
+    border-radius: 0.2em;
+}
+
+/*Conteúdo Principal*/
 .container__main {
-    flex: 1;
+    width: 76%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     overflow: auto;
 }
 
 .container_alura {
     text-align: center;
-    padding: 20px;
-    height: 85vh;
+    padding: 4px 10px 0 15px;
+    height: 20vh;
 }
 
 .page-title {
@@ -45,81 +210,40 @@ body {
 .page-subtitle {
     color:#ffffff;
     margin-top: 5px;
+    font-family: monospace;
 }
 
-.page-logo { width: 200px; }
+.joaoFrangoImg{
+    position: relative;
+    bottom: 5em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 171px;
+    height: 163px;
+    border: 3px #ffffff solid; 
+}
 
 .tabela_boletim {
+    position: relative;
     display: flex;
-    justify-content: start;
-    margin-top: 50px;
-    padding: 0;
+    justify-content: center;
+    bottom: 4em;
+    height: auto;
+    text-align: center;
 }
 
 td, th {
     padding: 6px;
     border: 2px #ffffff solid;
     color:#ffffff;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 #nome_Aluno { text-align: center; }
 
-.container__sidebar {
-    width: 26%;
-    height: auto;
-    background: linear-gradient(16deg, #8e9eab, #eef2f3);
-    border-right: 1px #161616 solid;
-}
-
-/* Sidebar */
-.grid-layout {
-    width: 100%;
-    height: 72px;
-    display: flex;
-}
-
-.icons {
-    padding-left: 15px;
-    width: 30px;
-    height: 30px;
-}
-
-.link_click {
-    align-items: center;
-    display: flex;
-    border: 1px #161616 solid;
-    text-decoration: none;
-    color: #161616;
-    width: 100%;
-    height: 70px;
-}
-
-.link_click:hover {
-    background-color: #a3acb3;
-}
-
-.link_click:active {
-    background-color: #778a99;
-    border-left: 3px #000000 solid;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-top: 4px #000000 solid;
-}
-
-.name_button {
-    font-size: 1.5em;
-}
-  
-.joaoFrangoImg{
-    position: absolute;
-    width: 280px;
-    height: 300px;
-    right: 0.7em;
-    bottom: 10.2em;
-    border: 3px #ffffff solid; 
-}
-
+/* Adicionando responsividade */
 @media (min-width: 1550px) {
     
     .container__sidebar {
