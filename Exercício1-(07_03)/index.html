@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Imersão Dev Alura - Aula 01</title>
+    <link rel="stylesheet" href="./style.css">
+    
+  </head>
+  <body>
+
+    <div class="menu_nav">
+        <a href="https://www.linkedin.com/in/jeferson-74vares/" target="_blank">
+            <img src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/main/_Jeff%20.png"
+            alt="Jeferson logo marca"
+            class="jeff_logo" />
+        </a>
+
+        <a href="https://alura.com.br/" target="_blank">
+            <img
+              src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+              alt=""
+              class="alura-logo"
+            />
+        </a>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="container__sidebar">
+           <div class="grid-layout" id="btn_Home">
+                <a href="#home" target="_self" rel="next" class="link_click">
+                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/house.svg" alt="icon hoome"> 
+                    <span class="name_button">Home</span>
+                </a>
+           </div>
+           
+           <div class="grid-layout" id="btn_Boletim">
+                <a href="#boletim" target="_self" rel="next" class="link_click">
+                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/files_boletim.svg" alt="icon boletim">
+                    <span class="name_button">Boletim</span>
+                </a>
+           </div>
+           
+           <div class="grid-layout" id="btn_help">
+                <a href="#ajuda" target="_self" rel="next" class="link_click" >
+                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/help.svg" alt="icon help">
+                    <span class="name_button">Ajuda</span>
+                </a>
+           </div>
+           
+           <div class="grid-layout" id="btn_setting">
+                <a href="#config" target="_self" rel="next" class="link_click" >
+                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/settins.svg" alt="icon settings">
+                    <span class="name_button">Configurações</span>
+                </a>
+           </div> 
+           
+           <div class="grid-layout" id="btn_singOut">
+                <a href="#sair" target="_self" rel="next" class="link_click" >
+                    <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/singout.svg" alt="icon singout">
+                    <span class="name_button">Sair</span>
+                </a>
+           </div> 
+           
+        </aside>
+    
+        <!-- Main -->
+        <main class="container__main">
+            
+            <div class="container_alura">
+            <h1 class="page-title">Calculadora de média</h1>
+            <p class="page-subtitle">
+                Descubra qual a sua média de nota de todas as provas!
+            </p>
+            <img
+                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+                class="page-logo"
+                alt=""
+            />
+    
+                <table class="tabela_boletim">
+                    <tr>
+                        <th id="titulo" colspan="7">Boletim escolar</th>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">Matérias</td>
+                        <td class="linha_materias"> 1° Bimestre</td>
+                        <td class="linha_materias"> 2° Bimestre</td>
+                        <td class="linha_materias"> 3° Bimestre</td>
+                        <td class="linha_materias"> 4° Bimestre</td>
+                        <td class="linha_materias"> Média Final</td>
+                        <td class="linha_materias"> Status </td>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">Matemática</td>
+                        <td class="linha_materias1" id="mat_nota1">5.8</td>
+                        <td class="linha_materias" id="mat_nota2">9.9</td>
+                        <td class="linha_materias" id="mat_nota3">8.0</td>
+                        <td class="linha_materias" id="mat_nota4">7.8</td>
+                        <td class="linha_materias" id="mat_MF"></td>
+                        <td class="linha_materias" id="mat_status"></td>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">Português</td>
+                        <td class="linha_materias" id="port_nota1">5.9</td>
+                        <td class="linha_materias" id="port_nota2">10</td>
+                        <td class="linha_materias" id="port_nota3">7.3</td>
+                        <td class="linha_materias" id="port_nota4">3.0</td>
+                        <td class="linha_materias" id="port_MF"></td>
+                        <td class="linha_materias" id="port_status"></td>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">Inglês</td>
+                        <td class="linha_materias" id="ing_nota1">3.4</td>
+                        <td class="linha_materias" id="ing_nota2">9.2</td>
+                        <td class="linha_materias" id="ing_nota3">5.0</td>
+                        <td class="linha_materias" id="ing_nota4">4.9</td>
+                        <td class="linha_materias" id="ing_MF"></td>
+                        <td class="linha_materias" id="ing_status"></td>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">Geografia</td>
+                        <td class="linha_materias" id="geo_nota1">5.2</td>
+                        <td class="linha_materias" id="geo_nota2">7.9</td>
+                        <td class="linha_materias" id="geo_nota3">0.1</td>
+                        <td class="linha_materias" id="geo_nota4">6.7</td>
+                        <td class="linha_materias" id="geo_MF"></td>
+                        <td class="linha_materias" id="geo_status"></td>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">História</td>
+                        <td class="linha_materias" id="hist_nota1">5.2</td>
+                        <td class="linha_materias" id="hist_nota2">9.7</td>
+                        <td class="linha_materias" id="hist_nota3">9.5</td>
+                        <td class="linha_materias" id="hist_nota4">4.4</td>
+                        <td class="linha_materias" id="hist_MF"></td>
+                        <td class="linha_materias" id="hist_status"></td>
+                    </tr>
+                    <tr>
+                        <td class="linha_materias">Surf</td>
+                        <td class="linha_materias" id="surf_nota1">9.0</td>
+                        <td class="linha_materias" id="surf_nota2">9.5</td>
+                        <td class="linha_materias" id="surf_nota3">10</td>
+                        <td class="linha_materias" id="surf_nota4">10</td>
+                        <td class="linha_materias" id="surf_MF"></td>
+                        <td class="linha_materias" id="surf_status"></td>
+                    </tr>
+                    <tr>
+                        <td>Aluno: </td>
+                        <td id="nome_Aluno" colspan="6">João Frango &#X1F3C2&#X1F413&#X1F30A</td>
+                    </tr>
+                    <tr>
+                        <td>Legenda: </td>
+                        <td class="linha_materias" id="legenda_status" colspan="6">AP (APROVADO) // RE (REPROVADO) </td>
+                    </tr>
+                </table>
+
+                <img class="joaoFrangoImg" src="https://github.com/JefersonT4v4res/Projetos/blob/main/joaoFrango.jpg?raw=true" alt="Imagem do aluno João Frango">
+            </main>
+</div>
+
+<script type="text/javascript" src="./script.js"></script>  
+  </body>
+</html>
