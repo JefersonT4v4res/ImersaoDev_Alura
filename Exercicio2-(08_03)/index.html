@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Imersão Dev Alura - Aula 02 </title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>  
+    <div class="menu_nav">  
+        <a href="https://www.linkedin.com/in/jeferson-74vares/" target="_blank">
+            <img src="../_imgs/_Jeff .png" alt="Jeferson logo marca"
+            class="jeff_logo"/>
+        </a>
+        <a href="https://alura.com.br/" target="_blank">
+            <img
+              src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo Alura"
+              class="alura-logo"/>
+        </a>
+        <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" alt="Logo imersão Dev"
+        class="page-logo"/>
+    </div>
+
+    <section class="apresentacao">
+          <div class="page-side">
+          <div id="blur"></div>
+            <img id="oConvertido" src="https://blush.design/api/download?shareUri=bizB0-lCX&w=800&h=800&fm=png" alt="Homem cheio de ideias">
+        </div>
+        <div class="main_div-apresentacao">
+            <header class="header-principal">
+                <h1 id="titulo">Bem-vindo ao Convertido!</h1>
+                <p class="subTitulo" id="subTituloPrincipal">Aqui você tem várias opções de conversões.</p>
+            </header>
+            <div class="card-conversoes">
+                <a href="#sessaoMoeda" class="card">
+                    <div class="card-content">
+                        <img class="preview" src="../_imgs/conversion(M).png" alt="conversão de moeda">
+                        <p class="description">Chega de complicar na hora da conversão de moeda, informe o valor e convertemos para você.</p>
+                    </div>
+                </a>
+                <a class="card">
+                    <div class="card-content">
+                        <img class="preview" src="../_imgs/velocity(M).png" alt="Simbolo velocímetro">
+                        <p class="description">É um mochileiro e está viajando pela galáxia? Desapega do "Km" e use "Anos luz".</p>
+                    </div>
+                </a>
+                <a class="card">
+                    <div class="card-content">
+                        <img class="preview" src="../_imgs/temperatures(M).png" alt="Simbolo temperatura">
+                        <p class="description">Celsius, Fahrenheit e Kelvin se for para esquentar a cabeça deixa que pelo menos a gente informa o grau.</p>
+                    </div>
+                </a>
+            </div>
+            <header class="header-secundario">
+                <h2 id="titulo">O que tá esperando? Escolha uma opção e saia convertendo.</h2>
+                <p class="subTitulo" id="subTituloSecundario">Não esqueça de espalhar a palavra.</p>
+            </header>
+            
+        </div>
+    </section>
+    
+    <section id="sessaoMoeda" class="conversorMoeda">
+        <div class="container">
+             <p class="page-subtitle">
+              1 Dólar americano U$ hoje
+            </p>
+            <h1 class="page-title">
+                5.00 Reais
+            </h1>
+        </div>
+    <div class="conversor">
+            <div class="container-conversao">
+                <div class="dropdown" onclick="ativaDrop()">
+                    <a class="drop-perfil-user" id="dropdownUser">
+                        <img src="../_imgs/usa.png" alt="País image" width="32" height="32" class="drop-user-img">
+                        <strong id="initial">USD</strong>
+                    </a>
+                    <ul id="dropdown-menu" class="dropdown_menu-user" >
+                        <li><a class="dropdown-item">
+                            <img src="../_imgs/usa.png" alt="País image" width="32" height="32" class="drop-user-img">
+                            <strong class="options">USD</strong>
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item">
+                            <img src="../_imgs/canada.png" alt="País image" width="32" height="32" class="drop-user-img">
+                            <strong class="options">CAD</strong>
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item">
+                            <img src="../_imgs/argentina.png" alt="País image" width="32" height="32" class="drop-user-img">
+                            <strong class="options">ARS</strong>
+                        </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item">
+                            <img src="../_imgs/japan.png" alt="País image" width="32" height="32" class="drop-user-img">
+                            <strong class="options">JPY</strong>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="valorMoeda">
+                    <input type="number" id="valor" size="2" /><br>
+                </div>
+            </div>
+        
+            <div class="container-valor_convertido">
+                <div class="selectionBrazil">
+                    <div class="brazil">
+                        <img src="../_imgs/brazil.png" alt="Brazil image" width="32" height="32" class="drop-user-img">
+                        <strong id="initial">BRL</strong>
+                    </div>
+                </div>
+                <div class="valorMoedaReal">
+                    <input type="number" id="valor" size="2" /><br>
+                </div>
+            </div>
+            <div class="container-valor_convertido">
+                <div class="selectionBitcoin" onclick="ativaDrop()">
+                    <div class="bitcoin" >
+                        <img src="../_imgs/bitcoin.png" alt="Bitcoin image" width="32" height="32" class="drop-user-img">
+                        <strong id="initial">Bitcoin</strong>
+                    </div>
+                </div>
+                <div class="valorMoedaReal">
+                    <input type="number" id="valor" size="2" /><br>
+                </div>
+            </div>
+        </div>
+        <button type="submit" onclick="Converter()">Converter</button>
+
+          
+
+    </section>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

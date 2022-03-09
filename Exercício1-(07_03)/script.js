@@ -8,7 +8,6 @@ function ativaDrop() {
    }
 }
 
-
 //Vamos do jeito lento mesmo
     var nota1 = parseFloat(window.document.getElementById("mat_nota1").value);
     var nota2 = parseFloat(window.document.getElementById("mat_nota2").value);

@@ -1,0 +1,332 @@
+* { margin: 0; padding: 0; }
+
+p, h1, h2 { margin: 0; padding: 0; color: #000000; }
+
+a, li { text-decoration: none; list-style: none;}
+
+body { margin: 0; padding: 0;
+       overflow: scroll; user-select: none;  }
+
+/*Nav bar*/       
+.menu_nav {
+    background: #161616ee;
+    filter: drop-shadow(0em 2px 7px #191b1d);
+    height: 10vh;
+}
+
+.jeff_logo {
+    position: absolute;
+    top: 0.6em;
+    left: 1em;
+    width: 360px;
+}
+
+.page-logo { 
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    display: flex;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+ /*Page abaixo da Nav*/ 
+section.apresentacao {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    background-color: #a5b7e7;
+}
+
+#blur {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255 255 255 / 18%);
+    filter: blur(1px);
+}
+
+.page-side {
+    width: 30%;
+    height: 90vh;
+    margin: 0;
+}
+
+#oConvertido {
+    position: absolute;
+    top: 15em;
+    left: 0;
+    width: 28em;
+    height: auto;
+}
+
+.main_div-apresentacao {
+    width: 70%;
+    height: 100%;
+}
+
+.header-principal, .header-secundario {
+    margin-top: 3em;
+}
+
+#titulo {
+    font-size: 2em;
+}
+
+.subTitulo {
+    font-size: 1.3em;
+}
+
+.card-conversoes {
+    margin-top: 5em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-left: 1em;
+    width: 220px;
+    height: 294px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: #fff;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    transition: all .4s;
+}
+
+.card::before {
+    content: 'Clique para ir';
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 50px;
+    color: rgb(51, 51, 51);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.card div.card-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+    background-color: #fff;
+    display: block;
+    padding: 0.9em;
+}
+
+.card:hover div {
+    transform: translateY(-70px);
+}
+
+.preview {
+    width: 110px;
+    height: 105px;
+    margin-top: 0.5em;
+}
+
+.description {
+    margin-top: 3em;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Section coversor moeda*/
+section.conversorMoeda {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d6efd;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 30vh;
+    margin-bottom: 6em;
+}
+
+.page-subtitle { margin-top: 2em; font-size: 1.7em; font-weight: 500;
+                text-shadow: 0 2px 10px #000000c4; letter-spacing: 5px;
+                font-family: 'Courier New', Courier, monospace;}
+
+.page-title { font-size: 4em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  
+
+
+.conversor {
+    display: flex;
+    justify-content: center;
+}
+
+.container-conversao, .container-valor_convertido {
+    background: #ffffff;
+    width: 360px;
+    height: 105px;
+    border-radius: 5em;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.6em;
+    cursor: pointer;
+}
+
+#initial {
+    font-size: 1.5em;
+}
+
+.options {
+    font-size: 1em;
+}
+
+.drop-perfil-user {
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.drop-user-img { border-radius: 50%; margin-right: 0.5rem; }
+
+.dropdown::after {
+    position: absolute;
+    display: inline-block;
+    left: 19em;
+    margin: 3.1em 0 0 0;
+    content: "";
+    border-top: 0.4em solid;
+    border-right: 0.4em solid transparent;
+    border-bottom: 0 solid;
+    border-left: 0.4em solid transparent;
+}
+
+#dropdown-menu {
+    position: relative;
+    display: none;
+    top: 4.5em;
+    left: 0em;
+    margin-left: -93px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    width: 10em;
+    height: 18em;
+    background-color: #8394a5;
+    border-radius: 1.3em;
+}
+
+#dropdown-menu li {
+    width: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+    margin: 0.5em auto;
+    font-size: 1.1rem;
+}
+
+.dropdown-divider {
+    width: 5em;
+    margin: 1em auto;
+}
+
+#dropdown-menu li a {
+    padding:0.2em 0.3em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#dropdown-menu li a:hover{ background: #7d7f80ad; border-radius: 0.2em; }
+
+.valorMoeda {
+    margin-left: auto;
+    margin-right: 1em;
+    margin-top: 2.1em;
+    display: flex;
+    width: 13em;
+    height: 2.4em;
+}
+
+.valorMoedaReal {
+    margin-left: auto;
+    margin-right: 1em;
+    margin-top: 2.1em;
+    display: flex;
+    width: 13.3em;
+    height: 2.4em;
+}
+
+.selectionBitcoin, .selectionBrazil {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.6em;
+}
+
+.brazil, .bitcoin {
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+input, input:focus {
+    border: 0;
+    border-radius: 5em;
+    text-align: center;
+}
+
+input { 
+    background: transparent;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    background: rgb(172, 166, 166);
+}
+
+input:focus {
+    background: rgba(172, 166, 166, 0.733);
+    filter: blur(5);
+    color:#000000;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+
+  
+label { color: #000000; }
+  
+button {
+    width: 10em;
+    height: 3em;
+    padding: 4px 8px;
+    background: #ffffff;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+  

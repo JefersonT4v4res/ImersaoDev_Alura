@@ -1,20 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Roboto Mono',monospace;
-  }
+* { margin: 0; padding: 0; }
+
+body { margin: 0; padding: 0; overflow: hidden;
+       font-family: 'Roboto Mono',monospace; }
 
 .menu_nav {
     background: #161616ee;
     filter: drop-shadow(25em 6px 7px #191b1d);
     height: 5em; 
 }
-
 
 .jeff_logo {
     position: absolute;
@@ -52,8 +45,7 @@ body {
     padding: 5px;
     background: #eef2f3e7;
     border-right: 1px #161616 solid;
-    box-shadow: 5px 0 3em 0.5em #161616;
-    
+    box-shadow: 5px 0 3em 0.5em #161616; 
 }
 
 a, li {
@@ -82,10 +74,7 @@ a, li {
     cursor: pointer;
 }
 
-.nav-item:focus {
-    background-color: #0d6efd;
-    border-radius: 0.3rem;
-}
+.nav-item:focus { background-color: #0d6efd; border-radius: 0.3rem; }
 
 .nav-link_boletim {
     margin: 0;
@@ -93,9 +82,7 @@ a, li {
     display: block;
 }
 
-.nav-item_boletim {
-    padding: 0;
-}
+.nav-item_boletim { padding: 0; }
 
 .nav-item_boletim, .nav-link_boletim {
     background-color: #0d6efd;
@@ -114,9 +101,8 @@ a, li {
     font-size: 1.1em;
 }
 
-.nav-item {
-    padding: 0;
-}
+.nav-item { padding: 0; }
+
 .nav-link {
     margin: 0;
     padding: 15px;
@@ -141,10 +127,7 @@ a, li {
     align-items: center; 
 }
 
-.drop-user-img {
-    border-radius: 50%;
-    margin-right: 0.5rem;
-}
+.drop-user-img { border-radius: 50%; margin-right: 0.5rem; }
 
 .dropdown::after {
     position: absolute;
@@ -192,10 +175,7 @@ a, li {
     color: #fff;
 }
 
-#dropdown-menu li a:hover{
-    background: #7d7f80ad;
-    border-radius: 0.2em;
-}
+#dropdown-menu li a:hover{ background: #7d7f80ad; border-radius: 0.2em; }
 
 /*Conteúdo Principal*/
 .container__main {
@@ -212,10 +192,7 @@ a, li {
     height: 20vh;
 }
 
-.page-title {
-    color:#ffffff;
-    margin: 10px 0 5px;
-}
+.page-title { color:#ffffff; margin: 10px 0 5px; }
 
 .page-subtitle {
     color:#ffffff;
@@ -263,42 +240,9 @@ input:focus {
     filter: blur(5);
     color:#000000;
     outline: none;
-
 }
+
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type=number] { -moz-appearance: textfield; appearance: textfield; }
 
 #nome_Aluno { text-align: center; }
-
-/* Adicionando responsividade */
-@media (min-width: 1550px) {
-    
-    .container__sidebar {
-        height: 67.8em;
-    }
-
-    td, th {
-        font-size: 2.2em;
-    }
-
-    .grid-layout {
-        height: 122px;
-    }
-
-    .link_click {
-        height: 121px;
-    }
-    
-    .icons{
-        width: 70px;
-        height: 50px;
-    }
-
-    .name_button {
-        font-size: 2.6em;
-    }
-    
-    .joaoFrangoImg{
-        bottom: 34.3em;
-        width: 340px;
-        height: 340px;
-    }
-}
