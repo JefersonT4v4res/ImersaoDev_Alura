@@ -12,7 +12,10 @@ body { margin: 0; padding: 0;
     background: #161616ee;
     filter: drop-shadow(0em 2px 7px #191b1d);
     height: 10vh;
+    position: fixed;
+    width: 93em;
 }
+
 
 .jeff_logo {
     position: absolute;
@@ -39,14 +42,14 @@ body { margin: 0; padding: 0;
  /*Page abaixo da Nav*/ 
 section.apresentacao {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     background-color: #a5b7e7;
 }
 
 #blur {
-    margin: 0;
+    margin: 4.8em 0;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -69,6 +72,7 @@ section.apresentacao {
 }
 
 .main_div-apresentacao {
+    margin-top: 4em;
     width: 70%;
     height: 100%;
 }
@@ -154,27 +158,31 @@ section.conversorMoeda {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #0d6efd;
+    background-color: #098359d1;
+    background-image: url(https://blush.design/api/download?shareUri=Ns_TYYB7JcR4mDpf&c=Hair_0%7E878787-0.4%7E0f0f0f_Skin_0%7Ec26e5e-0.4%7Eecafa3&w=800&h=800&fm=png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 47em;
 }
 
 .container {
-    text-align: center;
-    padding: 20px;
+    text-align: start;
+    margin-left: 7em;
     height: 30vh;
-    margin-bottom: 6em;
+    margin-top: 5em;
 }
 
 .page-subtitle { margin-top: 2em; font-size: 1.7em; font-weight: 500;
                 text-shadow: 0 2px 10px #000000c4; letter-spacing: 5px;
                 font-family: 'Courier New', Courier, monospace;}
 
-.page-title { font-size: 4em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-  
-
-
+.page-title { margin-left: 2em;font-size: 4em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+                
 .conversor {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: 12em;
 }
 
 .container-conversao, .container-valor_convertido {
@@ -319,11 +327,9 @@ label { color: #000000; }
 button {
     width: 10em;
     height: 3em;
-    padding: 4px 8px;
     background: #ffffff;
     margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 6em;
     border-radius: 3em;
     font-size: 1em;
     font-weight: 600;
