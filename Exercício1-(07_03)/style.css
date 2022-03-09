@@ -62,12 +62,18 @@ a, li {
     color: #000000;
 }
 
+.nav-icon {
+    width: 26px;
+    height: 26px;
+    padding-right: 10px;
+}
+
 .opcoes_sidebar {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding-left: 0;
-    margin-bottom: 20em;
+    margin-bottom: 19em;
 }
 
 .nav-item:hover {
@@ -96,8 +102,10 @@ a, li {
     border-radius: 0.3rem;
     color: #000;
     margin: 5px;
+    display: flex;
     font-size: 1.1em;
     cursor: default;
+    align-items: center;
 }
 
 .nav-item, .nav-link{
@@ -112,7 +120,9 @@ a, li {
 .nav-link {
     margin: 0;
     padding: 15px;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .dropdown {
@@ -149,7 +159,7 @@ a, li {
 
 #dropdown-menu {
     position: relative;
-    display: block;
+    display: none;
     bottom: 7.5em;
     left: 2.4em;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
@@ -204,7 +214,7 @@ a, li {
 
 .page-title {
     color:#ffffff;
-    margin: 0 0 5px;
+    margin: 10px 0 5px;
 }
 
 .page-subtitle {
@@ -215,7 +225,7 @@ a, li {
 
 .joaoFrangoImg{
     position: relative;
-    bottom: 5em;
+    bottom: 4.5em;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -239,6 +249,21 @@ td, th {
     color:#ffffff;
     font-size: 1em;
     font-weight: 600;
+}
+
+input {
+    text-align: center;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    width: 100%;
+}
+input:focus {
+    background: rgba(255, 255, 255, 0.589);
+    filter: blur(5);
+    color:#000000;
+    outline: none;
+
 }
 
 #nome_Aluno { text-align: center; }
