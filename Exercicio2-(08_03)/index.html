@@ -10,7 +10,7 @@
 </head>
 <body>  
     <div class="menu_nav">  
-        <a href="https://www.linkedin.com/in/jeferson-74vares/" target="_blank">
+        <a href="#sessao-apresentacao">
             <img src="../_imgs/_Jeff .png" alt="Jeferson logo marca"
             class="jeff_logo"/>
         </a>
@@ -24,7 +24,7 @@
         class="page-logo"/>
     </div>
 
-    <section class="apresentacao">
+    <section id="sessao-apresentacao" class="apresentacao">
           <div class="page-side">
           <div id="blur"></div>
             <img id="oConvertido" src="https://blush.design/api/download?shareUri=bizB0-lCX&w=800&h=800&fm=png" alt="Homem cheio de ideias">
@@ -41,7 +41,7 @@
                         <p class="description">Chega de complicar na hora da conversão de moeda, informe o valor e convertemos para você.</p>
                     </div>
                 </a>
-                <a class="card">
+                <a href="#euSouA-Velocidade" class="card">
                     <div class="card-content">
                         <img class="preview" src="../_imgs/velocity(M).png" alt="Simbolo velocímetro">
                         <p class="description">É um mochileiro e está viajando pela galáxia? Desapega do "Km" e use "Anos luz".</p>
@@ -127,11 +127,56 @@
                     <input type="number" id="valor" size="2" /><br>
                 </div>
             </div>
-            <button type="submit" onclick="Converter()">Converter</button>
+            <button id="btn_Moeda" type="submit" onclick="Converter()">Converter</button>
         </div>
-        
 
-          
+        <img id="pig-bank" src="https://raw.githubusercontent.com/JefersonT4v4res/ImersaoDev_Alura/708f2fd0895275da8ee8430a251f240cc3c6858e/_imgs/pig_bank.svg" alt="Porquinho banco">
+    </section>
+
+    <section id="euSouA-Velocidade" class="relampagoMarquinhos">
+        <div id="glass"></div>
+        <div class="card-conversor-vel">
+            <div class="card__cover">
+                <h1 id="titleKM">Quilômetros para Anos-luz</h1>
+                <input id="valorKM" type="number" placeholder=" Quantidade em quilômetros. Ex.: 75" min="0">
+                <span id="valorConvertido"></span>
+                <button id="btn_KM" type="submit" onclick="Converter()">Converter</button>
+                <hr class="line-divisor"/>
+            </div>
+        
+            <div class="card__content">
+                <h1 id="sessaoComents">Quem usou também comentou:</h1>
+                <div class="coments-content">
+                    <img src="" alt="">
+                    <span>Arthur</span>
+                    <p>Eu jurava que daria algo como 42.</p>
+                </div>
+                <div class="coments-content">
+                    <img src="" alt="">
+                    <span>Marvim</span>
+                    <p>Isso de nada adiantará, vamos todos morrer... se tivermos sorte!</p>
+                </div>
+                <div class="coments-content">
+                    <img src="" alt="">
+                    <span>Ford</span>
+                    <p>Arthur! Você pegou sua toalha?</p>
+                </div>
+                <div class="coments-content">
+                    <img src="" alt="">
+                    <span>Zaphod</span>
+                    <p>Eu só cheguei aqui por causa do motor de improbabilidade &#X1F60E&#X1F449&#X1F449</p>
+                </div>
+                <div class="coments-content">
+                    <img src="" alt="">
+                    <span>Golfinhos</span>
+                    <p>Adeus e obrigado pelos peixes.</p>
+                </div>
+            </div>
+            
+
+        </div>
+        <img id="moonMan" src="https://blush.design/api/download?shareUri=KMkOstigzhw5sBSI&w=800&h=800&fm=png" alt="" >
+        <img id="floatGirl" src="https://blush.design/api/download?shareUri=F1WGvM3_f&w=800&h=800&fm=png" alt="">
     </section>
 
     <script type="text/javascript" src="./script.js"></script>
