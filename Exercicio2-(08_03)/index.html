@@ -47,7 +47,7 @@
                         <p class="description">É um mochileiro e está viajando pela galáxia? Desapega do "Km" e use "Anos luz".</p>
                     </div>
                 </a>
-                <a class="card">
+                <a href="#temperatura-section" class="card">
                     <div class="card-content">
                         <img class="preview" src="../_imgs/temperatures(M).png" alt="Simbolo temperatura">
                         <p class="description">Celsius, Fahrenheit e Kelvin se for para esquentar a cabeça deixa que pelo menos a gente informa o grau.</p>
@@ -140,43 +140,67 @@
                 <h1 id="titleKM">Quilômetros para Anos-luz</h1>
                 <input id="valorKM" type="number" placeholder=" Quantidade em quilômetros. Ex.: 75" min="0">
                 <span id="valorConvertido"></span>
-                <button id="btn_KM" type="submit" onclick="Converter()">Converter</button>
+                <button class="btn_KM" type="submit" onclick="Converter()">Converter</button>
                 <hr class="line-divisor"/>
             </div>
         
             <div class="card__content">
                 <h1 id="sessaoComents">Quem usou também comentou:</h1>
                 <div class="coments-content">
-                    <img src="" alt="">
-                    <span>Arthur</span>
+                    <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/Arthur.png?raw=true" alt="Imagem usuário">
+                    <span class="comenter-name">Arthur: </span>
                     <p>Eu jurava que daria algo como 42.</p>
                 </div>
                 <div class="coments-content">
-                    <img src="" alt="">
-                    <span>Marvim</span>
+                    <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/Marvin.png?raw=true" alt="Imagem usuário">
+                    <span class="comenter-name">Marvin: </span>
                     <p>Isso de nada adiantará, vamos todos morrer... se tivermos sorte!</p>
                 </div>
                 <div class="coments-content">
-                    <img src="" alt="">
-                    <span>Ford</span>
+                    <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/Ford.png?raw=true" alt="Imagem usuário">
+                    <span class="comenter-name">Ford: </span>
                     <p>Arthur! Você pegou sua toalha?</p>
                 </div>
                 <div class="coments-content">
-                    <img src="" alt="">
-                    <span>Zaphod</span>
+                    <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/Zaphod.png?raw=true" alt="Imagem usuário">
+                    <span class="comenter-name">Zaphod: </span>
                     <p>Eu só cheguei aqui por causa do motor de improbabilidade &#X1F60E&#X1F449&#X1F449</p>
                 </div>
                 <div class="coments-content">
-                    <img src="" alt="">
-                    <span>Golfinhos</span>
+                    <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/dolphin.png?raw=true" alt="Imagem usuário">
+                    <span class="comenter-name">Golfinhos: </span>
                     <p>Adeus e obrigado pelos peixes.</p>
                 </div>
             </div>
-            
-
         </div>
         <img id="moonMan" src="https://blush.design/api/download?shareUri=KMkOstigzhw5sBSI&w=800&h=800&fm=png" alt="" >
         <img id="floatGirl" src="https://blush.design/api/download?shareUri=F1WGvM3_f&w=800&h=800&fm=png" alt="">
+    </section>
+
+    <section id="temperatura-section" class="sessao-temperatura">
+
+        <div id="div-temperatura">
+            <h1 id="titulo_temp">Qual é a temperatura?</h1>
+            <div id="termometro-grid_layout">
+                <span class="frase_temp">De</span>
+                <select id="unidade1" type="text">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+                <span class="frase_temp">Para</span>
+                <select id="unidade1" type="text">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+        <input id="inpt-temperatura" type="number" placeholder="Valor da temperatura">
+        <button onclick="converter()" id="btn_temp" class="btn_KM">Converter</button>
+        </div>
+
+        <img id="peopleChrisma" src="https://blush.design/api/download?shareUri=6dKJbobpeXueiFq8&w=800&h=800&fm=png" alt="">
+        <img id="girlBeach" src="https://blush.design/api/download?shareUri=21PBz6JrB&w=800&h=800&fm=png" alt="">
     </section>
 
     <script type="text/javascript" src="./script.js"></script>
