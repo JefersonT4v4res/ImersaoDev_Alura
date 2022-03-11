@@ -64,44 +64,44 @@
     
     <section id="sessaoMoeda" class="conversorMoeda">
         <div class="container">
-             <p class="page-subtitle">
-              1 Dólar americano U$ hoje
+             <p class="page-subtitle" id="subtitle">
+              1 Dólar americano $ hoje
             </p>
-            <h1 class="page-title">
-                5.00 Reais
+            <h1 class="page-title" id="title">
+                5.04 Reais
             </h1>
         </div>
     <div class="conversor">
             <div class="container-conversao">
                 <div class="dropdown" onclick="ativaDrop()">
                     <a class="drop-perfil-user" id="dropdownUser">
-                        <img src="../_imgs/usa.png" alt="País image" width="32" height="32" class="drop-user-img">
-                        <strong id="initial">USD</strong>
+                        <img src="../_imgs/usa.png" alt="País image" id="flag-initial" width="32" height="32" class="drop-user-img">
+                        <span id="initial-coin">USD</span>
                     </a>
                     <ul id="dropdown-menu" class="dropdown_menu-user" >
-                        <li><a class="dropdown-item">
-                            <img src="../_imgs/usa.png" alt="País image" width="32" height="32" class="drop-user-img">
-                            <strong class="options">USD</strong>
+                        <li><a class="dropdown-item" onclick="alteraMoeda('1')">
+                            <img src="../_imgs/usa.png" alt="País image" width="32" height="32" id="flagUsa" class="drop-user-img">
+                            <span class="options" id="usd">USD</span>
                         </a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item">
-                            <img src="../_imgs/canada.png" alt="País image" width="32" height="32" class="drop-user-img">
-                            <strong class="options">CAD</strong>
+                        <li><a class="dropdown-item" onclick="alteraMoeda('2')">
+                            <img src="../_imgs/canada.png" alt="País image" width="32" height="32" id="flagCanada" class="drop-user-img">
+                            <span class="options" id="cad">CAD</span>
                         </a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item">
-                            <img src="../_imgs/argentina.png" alt="País image" width="32" height="32" class="drop-user-img">
-                            <strong class="options">ARS</strong>
+                        <li><a class="dropdown-item" onclick="alteraMoeda('3')">
+                            <img src="../_imgs/argentina.png" alt="País image" width="32" height="32" id="flagArgentina" class="drop-user-img">
+                            <span class="options" id="ars">ARS</span>
                         </a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item">
-                            <img src="../_imgs/japan.png" alt="País image" width="32" height="32" class="drop-user-img">
-                            <strong class="options">JPY</strong>
+                        <li><a class="dropdown-item" onclick="alteraMoeda('4')">
+                            <img src="../_imgs/japan.png" alt="País image" width="32" height="32" id="flagJapan" class="drop-user-img">
+                            <span class="options" id="jpy">JPY</span>
                         </a></li>
                     </ul>
                 </div>
                 <div class="valorMoeda">
-                    <input type="number" id="valor" size="2" /><br>
+                    <input type="number" class="valor" id="valorMoedaInserida" size="2"/>
                 </div>
             </div>
         
@@ -109,25 +109,25 @@
                 <div class="selectionBrazil">
                     <div class="brazil">
                         <img src="../_imgs/brazil.png" alt="Brazil image" width="32" height="32" class="drop-user-img">
-                        <strong id="initial">BRL</strong>
+                        <span id="initial-coin">BRL</span>
                     </div>
                 </div>
                 <div class="valorMoedaReal">
-                    <input type="number" id="valor" size="2" /><br>
+                    <input type="number" class="valor" id="valor-Moeda_brl" size="2" disabled/>
                 </div>
             </div>
             <div class="container-valor_convertido">
                 <div class="selectionBitcoin" onclick="ativaDrop()">
                     <div class="bitcoin" >
                         <img src="../_imgs/bitcoin.png" alt="Bitcoin image" width="32" height="32" class="drop-user-img">
-                        <strong id="initial">Bitcoin</strong>
+                        <span id="initial-coin">Bitcoin</span>
                     </div>
                 </div>
                 <div class="valorMoedaReal">
-                    <input type="number" id="valor" size="2" /><br>
+                    <input type="number" class="valor" id="valor-Moeda_bitcoin" size="2" disabled/>
                 </div>
             </div>
-            <button id="btn_Moeda" type="submit" onclick="Converter()">Converter</button>
+            <button id="btn_Moeda" type="submit" onclick="converteMoeda()">Converter</button>
         </div>
 
         <img id="pig-bank" src="https://raw.githubusercontent.com/JefersonT4v4res/ImersaoDev_Alura/708f2fd0895275da8ee8430a251f240cc3c6858e/_imgs/pig_bank.svg" alt="Porquinho banco">
@@ -140,7 +140,7 @@
                 <h1 id="titleKM">Quilômetros para Anos-luz</h1>
                 <input id="valorKM" type="number" placeholder=" Quantidade em quilômetros. Ex.: 75" min="0">
                 <span id="valorConvertido"></span>
-                <button class="btn_KM" type="submit" onclick="Converter()">Converter</button>
+                <button class="btn_KM" type="submit" onclick="relampagoMarquinhos()">Converter</button>
                 <hr class="line-divisor"/>
             </div>
         
@@ -183,11 +183,10 @@
         <div id="div-temperatura">
             <h1 id="titulo_temp">Qual é a temperatura?</h1>
 
-            <div id="termometro-grid_layout">
-                
+            <div id="termometro-grid_layout">    
                 <div class="cartoes-temp">
                     <span class="frase_temp">De</span>
-                    <select id="unidade1" type="text">
+                    <select class="unidade1" id="grau1" type="text">
                         <option value="Celsius">Celsius</option>
                         <option value="Fahrenheit">Fahrenheit</option>
                         <option value="Kelvin">Kelvin</option>
@@ -196,16 +195,15 @@
                 </div>
                 <div class="cartoes-temp">
                     <span class="frase_temp">Para</span>
-                    <select id="unidade1" type="text">
+                    <select class="unidade1" id="grau2" type="text">
                         <option value="Celsius">Celsius</option>
                         <option value="Fahrenheit">Fahrenheit</option>
                         <option value="Kelvin">Kelvin</option>
                     </select>
-                    <input id="inpt-temperatura_Valor" type="number" placeholder="Resultado convertido" disabled>
+                    <input id="inpt-temperatura_Valor" type="text" placeholder="Resultado convertido" disabled>
                 </div>
             </div>
-        
-        <button onclick="converter()" id="btn_temp" class="btn_KM">Converter</button>
+        <button onclick="converteGrau()" id="btn_temp" class="btn_KM">Converter</button>
         </div>
 
         <img id="peopleChrisma" src="https://blush.design/api/download?shareUri=6dKJbobpeXueiFq8&w=800&h=800&fm=png" alt="">

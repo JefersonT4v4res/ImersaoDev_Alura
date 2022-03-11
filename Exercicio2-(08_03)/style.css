@@ -202,7 +202,7 @@ section.conversorMoeda {
     cursor: pointer;
 }
 
-#initial {
+#initial-coin {
     font-size: 1.5em;
 }
 
@@ -296,14 +296,14 @@ section.conversorMoeda {
     align-items: center;
 }
 
-input#valor, input#valor:focus {
+input.valor, input.valor:focus {
     border: 0;
     border-radius: 5em;
     text-align: center;
     font-size: 1em;
 }
 
-input#valor { 
+input.valor { 
     background: transparent;
     border: 0;
     color: #fff;
@@ -356,7 +356,7 @@ button#btn_Moeda {
 #glass {
     position: absolute;
     background-color: #ffffff33;
-    top: 95em;
+    top: 96em;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -395,7 +395,7 @@ button#btn_Moeda {
     text-align: center;
     border: 0;
     margin-top: 3em;
-    margin-bottom: 4em;
+    margin-bottom: 1.5em;
     color: #000000;
     width: 30em;
     height: 3em;
@@ -405,8 +405,11 @@ button#btn_Moeda {
 
 #valorConvertido {
     border-bottom: 0.3em solid #4416b1a9;
-    width: 25em;
-    margin-bottom: 1.5em;
+    width: 17em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
 button.btn_KM {
@@ -453,7 +456,7 @@ button.btn_KM {
 
 #moonMan, #floatGirl { position: relative; width: 26em;}
 
-#floatGirl { left: 33em; bottom: 0em; animation: floatGirl 6s linear 1s infinite alternate-reverse none;}
+#floatGirl { left: 33em; bottom: 11em; animation: floatGirl 6s ease-in-out 1s infinite alternate-reverse none;}
             @keyframes floatGirl {
                 0% {
                 transform: translateY(-10em) rotate(-12deg);
@@ -465,12 +468,11 @@ button.btn_KM {
             }
 
 
-.myBackground{ position: absolute; right: 68em; top: 108em; height: 25em;
+.myBackground{ position: relative; right: 33.9em; top: 15em; height: 25em;
                background-color: #250762; border-radius: 13em; 
                box-shadow: 0 0 2em #290070;}
 
-#moonMan { right: 0em; bottom: 1em;
-           animation: spaceman 4s linear 1s infinite alternate-reverse none;}
+#moonMan {position: relative; left: 1em; animation: spaceman 4s linear 1s infinite alternate-reverse none;}
 
            @keyframes spaceman {
             0% {
@@ -535,7 +537,7 @@ button.btn_KM {
     font-weight: bold;
 }
 
-#unidade1 {
+.unidade1 {
     text-align: center;
     font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif;
