@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Imersão Dev Alura - Aula 02 </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section class="jPanel">
+        <div class="jFrame">
+            <div class="barra-ferramentas">
+                <div class="nome-aplicacao">
+                    <img src="../_imgs/Djeff productions_Logo.jpg" id="icone-aplicacao" alt="">
+                    <h1 id="nome">Adivinhe o número</h1>
+                </div>
+                <div class="container">
+                    <div class="barra-ferramenta_options" id="minimizar">
+                        <img src="../_imgs/minimize-sign.png" alt="minimizar" width="20" height="20">
+                    </div>
+                    <div class="barra-ferramenta_options" id="maximizar">
+                        <img src="../_imgs/squares.png" alt="maximizar" width="20" height="20">
+                    </div>
+                    <div class="barra-ferramenta_options" id="encerrar">
+                        <img src="../_imgs/close.png" alt="fechar" width="20" height="20">
+                    </div>
+                </div>
+
+            </div>
+
+            <main class="container-game">
+                <section class="section-game">
+                    <h1 id="section-game_title">Advinhe o número</h1>
+                        <div class="card">
+                            <div class="card2">
+                              <span id="valorRevelado"></span>
+                            </div>
+                        </div>
+                        <div class="vidas">
+                            <img id="iconLife1" src="../_imgs/lifeIcon.png" alt="">
+                            <img id="iconLife2" src="../_imgs/lifeIcon.png" alt="">
+                            <img id="iconLife3" src="../_imgs/lifeIcon.png" alt="">
+                        </div>
+                    <div id="gaiolaHeroi"><img id="hero" src="../_imgs/Naham.png" alt="">
+                        <img id="inimigo" src="../_imgs/sphinx.png" alt=""></div>
+                    <img id="ground" src="../_imgs/ground.jpg" alt="">
+                </section>
+                <aside class="section-chat">
+                        <div class="messages-chat">
+                            <span class="message" id="text1">Nosso Heroi precisa entrar na pirâmide para salvar sua irmã,
+                                 mas antes deve passar pelo Guardião. Você tem três tentativas para acertar o número secreto e derrotar a Esfinge!"</span><br><br>
+                            <span class="message" id="text2" ></span><br><br>
+                            <span class="message" id="text3"></span><br><br>
+                            <span class="message" id="text4"></span><br><br>
+                            <span class="message" id="text5"></span><br><br>
+                        </div>
+                        <div class="text-chat">
+                            <input type="text" id="inp_text" placeholder="Digite aqui...">
+                            <button id="text-send" type="submit" onclick="chat()" disabled><img src="../_imgs/moreThan.png" alt=""></button>
+                        </div>
+                </aside>
+            </main>
+          <div class="comecar"><button id="btn_comecar" type="submit" onclick="game()">Começar!</button></div>
+        </div>
+    </section>
+     
+    <div class="menu_nav">  
+        <a href="#sessao-apresentacao">
+            <img src="../_imgs/_Jeff_Logo(P).png" alt="Jeferson logo marca"
+            class="jeff_logo"/>
+        </a>
+        <a href="https://alura.com.br/" target="_blank">
+            <img
+              src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo Alura"
+              class="alura-logo"/>
+        </a>
+        <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" alt="Logo imersão Dev"
+        class="page-logo"/>
+    </div>
+
+   <script type="text/javascript" src="./script.js"></script> 
+</body>
+</html>

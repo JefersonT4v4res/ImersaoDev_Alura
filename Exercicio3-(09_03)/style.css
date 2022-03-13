@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200;400&family=Inter&family=Lilita+One&family=Lobster&family=Orbitron:wght@500&family=Press+Start+2P&display=swap');
+
+* { margin: 0; padding: 0;}
+
+p, h1, h2 { margin: 0; padding: 0; color: #000000; }
+
+a, li { background-color: transparent; text-decoration: none; list-style: none;}
+
+
+body { margin: 0; padding: 0; overflow: hidden;
+       user-select: none; }
+
+/*Nav bar*/       
+.menu_nav {
+    background: #161616;
+    filter: drop-shadow(0em 2px 7px #191b1d);
+    height: 10vh;
+    width: 100%;
+}
+
+.jeff_logo {
+    position: absolute;
+    top: 1.2em;
+    left: 1em;
+    width: 150px;
+}
+
+.page-logo { 
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    display: flex;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*Abaixo do navbar*/
+
+.jPanel{
+    background-image: url(../_imgs/windowsBg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jFrame {
+    width: 86em;
+    height: 45em;
+    background-color: #000000;
+    border: 0.12em solid #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-ferramentas {
+    width: 100.12%;
+    height: 3em;
+    margin: -1px;
+    background-color: #808080;
+    display: flex;
+}
+
+.nome-aplicacao {
+    width: 30em;
+    height: 100%;
+    padding-left: 1em;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+#icone-aplicacao {
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+#nome {
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    width: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.barra-ferramenta_options {
+    width: 3.5em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#encerrar:hover {
+    background-color: #e71313;
+}
+
+div#minimizar:hover, #maximizar:hover {
+    background-color: #727171d3;
+}
+
+.container-game {
+    width: 100%;
+    height: 51em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.section-game {
+    background-image: url(../_imgs/bgInicial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #90b9f6;*/
+    border: 0.2em solid #f3f2f2d2;
+    width: 70%;
+    height: 94.8%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.section-chat {
+    border: 0.2em solid #ffffff;
+    width: 25%;
+    height: 92%;
+}
+
+textarea {
+    background-color: #14131b;
+    border: 0;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.card {
+    width: 170px;
+    height: 214px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    margin-bottom: 0.7em;
+}
+
+.card2 {
+    width: 170px;
+    height: 214px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+#valorRevelado {
+    visibility: hidden;
+    position: relative;
+    left: 0.07em;
+    top: 0.21em;
+    margin: 0em;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10em;
+    width: 100%;
+    height: 100%;
+}
+
+#section-game_title{
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+    font-size: 3.5em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#gaiolaHeroi {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#hero {
+    width: 96px;
+    height: 96px;
+    margin-right: 50%;
+}
+#inimigo {
+    width: 177px;
+    height: 187px;
+    transform: scale(1.22);
+}
+
+#ground {
+    width: 100%;
+    height: 3em;
+}
+
+.section-chat {
+    display: block;
+    padding: 0.5em;
+}
+
+.messages-chat {
+    width: 100%;
+    height: 80%;
+}
+
+.message {
+    margin-bottom: 10em;
+    color: #fff;
+    font-size: 1em;
+}
+
+.text-chat {
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 20%;
+}
+
+.text-chat {
+    display: flex;
+    align-items: center;
+}
+
+#text-send {
+    background-color: transparent;
+    border: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #b32e29;
+    cursor: pointer;
+}
+
+input#inp_text {
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid #000000;
+    text-align: center;
+    font-size: 1.5em;
+    width: 80%;
+    height: 100%;
+    color:#000000;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+
+.comecar {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 65%;
+    margin-bottom: 1em;
+}
+
+#btn_comecar {
+    width: 10em;
+    height: 3em;
+    background: #ffffff;
+    font-size: 1em;
+    font-weight: 600;
+}
