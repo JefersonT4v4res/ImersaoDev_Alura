@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200;400&family=Inter&family=Lilita+One&family=Lobster&family=Open+Sans:ital,wght@1,800&family=Orbitron:wght@500&family=Press+Start+2P&display=swap');
+
+* { margin: 0; padding: 0;}
+
+p, h1, h2 { margin: 0; padding: 0; color: #000000; }
+
+a, li { background-color: transparent; text-decoration: none; list-style: none;}
+
+
+body { margin: 0; padding: 0; user-select: none; }
+
+#logo-polaroit{ border-top-left-radius: 30px;  border-top-right-radius: 30px; }
+
+.section_make-post {
+    display: flex;
+    width: 100%;
+    min-height: 65vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left bottom, #2cc977, #42cc80, #53cf89, #62d292, #70d59b, #7cd491, #88d287, #94d07d, #a9c75c, #c1bb3e, #dbac25, #f5981d);
+}
+
+#make-post {
+    width: 97vw;
+    height: 57vh;
+    background-color: #444444;
+    background-image: url(https://cdn.shopify.com/s/files/1/1162/8964/files/image_homepage_banner_Polaroid-Go-Black_desktop_1800x.jpg?v=1647011421);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card-transparent {
+    width: 27vw;
+    height: 47vh;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: #000000cc;
+    padding: 15px;
+}
+
+#title-section {
+    text-align: center;
+    font-size: 1.3em;
+    color:#fcfcfc;
+    margin: 15px auto 110px;
+    font-family: 'Inter', sans-serif;
+}
+
+#spn-polaroit {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+    background-image: linear-gradient(to top, #2cc977, #42cc80, #53cf89, #62d292, #70d59b, #7cd491, #88d287, #94d07d, #a9c75c, #c1bb3e, #dbac25, #f5981d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-align: center;
+    font-size: 1.5em;
+    width: 25vw;
+    height: 5vh;
+    color:#000000;
+    margin: 15px auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+
+#botao {
+    margin-top: 110px;
+}
+
+#botao-polaroit {
+    display: block;
+    margin: 0 auto;
+    width: 14.8vw;
+    height: 5.3vh;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #030225;
+    border: 0;
+    cursor: pointer;
+}
+
+img#logo-polaroit:hover {
+    transform: translate(-0.2em, -0.5em);
+}
+
+img#logo-polaroit:active {
+    transform: translate(0em, 0em);
+    box-shadow: 0.6em 0.6em 0.5em #030225;
+}
+
+
+.section_polaroid-result {
+    display: flex;
+    width: 100%;
+    min-height: 29vh;
+    background-color: #161616;
+}
+
+.polaroit-result {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.final-result {
+    background-color: #ffffff;
+    width: 20vw;
+    height: 42vh;
+    padding: 25px;
+    margin: 15px;
+}
+
+.img-area {
+    width: 100%;
+    min-height: auto;
+    max-height: 33vh;
+}
+
+.img-area img {
+    width: 100%;
+    max-height: 32vh;
+}
+
+.subtitle-area {
+    text-align: center;
+    padding: 25px;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+}
+
+/*footer*/       
+.footer {
+    background: #161616;
+    filter: drop-shadow(0em 2px 7px #191b1d);
+    height: 6vh;
+    max-height: 6vh;
+    width: 100%;
+}
+
+.jeff_logo {
+    position: absolute;
+    top: 1vh;
+    left: 2vh;
+    width: 100px;
+}
+
+.page-logo { 
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9px;
+    display: flex;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
