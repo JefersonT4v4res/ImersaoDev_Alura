@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Imersão Dev Alura - Aula 04 - PolaroIt</title>
+    <title> Imersão Dev Alura - Aula 04 & 05 - PolaroIt</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -13,7 +13,7 @@
         <div id="make-post">
             <div id="card-transparent">
                 <h1 id="title-section">Crie sua própria foto no estilo <span id="spn-polaroit">Polaroid</span></h1>
-                <input id="link-img" type="text" value="" placeholder="Insira o link da imagem">
+                <input id="link-img" type="url" value="" placeholder="Insira o link da imagem">
                 <input id="subtitle-img" type="text" value="" placeholder="Insira sua legenda">
                 <div id="botao">
                     <button type="submit" id="botao-polaroit" onclick="capturarInformacoes()"><img id="logo-polaroit" src="../_imgs/Polaro.png" alt="Site logo marca"></button>
@@ -24,9 +24,14 @@
 
     <section class="section_polaroid-result">
         <div id="polaroitResult" class="polaroit-result">
-            
         </div>
+    </section>
 
+    <section id="sectionSelected" class="section_selected">
+        <div id="close-section"><img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar"></div>
+        <div id="containerArea" class="container-area">
+        </div>
+        <button id="botao-remover" onclick="queimarPolaroid()">Remover</button>
     </section>
 
     <footer class="footer">  
